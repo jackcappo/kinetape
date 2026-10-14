@@ -3,6 +3,8 @@
 Athletic tape with an embedded thin-film pressure sensor + ESP32 that tracks muscle activity all day,
 to support physical-therapy recovery (ACL reconstruction and similar long rehabs).
 
+**Live app: [kinetape.vercel.app](https://kinetape.vercel.app)** — open in Chrome or Edge (Web Bluetooth), or try Demo mode with no hardware.
+
 | Folder | What |
 |---|---|
 | [`firmware/`](firmware/README.md) | ESP32 (PlatformIO, Arduino, NimBLE) — sampling, rep detection, minute log, BLE service |
