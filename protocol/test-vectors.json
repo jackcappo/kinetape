@@ -1,0 +1,130 @@
+{
+  "_note": "Byte-exact vectors for PROTOCOL.md v1. hex = lowercase, no separators. Both firmware encoders and webapp decoders/encoders must match exactly.",
+  "live": [
+    {
+      "fields": {
+        "flags": 7,
+        "seq": 258,
+        "uptime_ms": 123456,
+        "raw": 2048,
+        "activation_permille": 750
+      },
+      "hex": "1007020140e201000008ee02"
+    }
+  ],
+  "record": [
+    {
+      "fields": {
+        "t": 1760000000,
+        "boot_id": 7,
+        "flags": 3,
+        "mean_activation_permille": 250,
+        "peak_activation_permille": 900,
+        "reps": 12,
+        "active_seconds": 18
+      },
+      "hex": "0078e76807000300fa0084030c001200"
+    },
+    {
+      "fields": {
+        "t": 3600,
+        "boot_id": 6,
+        "flags": 2,
+        "mean_activation_permille": 0,
+        "peak_activation_permille": 15,
+        "reps": 0,
+        "active_seconds": 0
+      },
+      "hex": "100e00000600020000000f0000000000"
+    }
+  ],
+  "history_records": [
+    {
+      "first_index": 41,
+      "records": [
+        {
+          "t": 1760000000,
+          "boot_id": 7,
+          "flags": 3,
+          "mean_activation_permille": 250,
+          "peak_activation_permille": 900,
+          "reps": 12,
+          "active_seconds": 18
+        },
+        {
+          "t": 3600,
+          "boot_id": 6,
+          "flags": 2,
+          "mean_activation_permille": 0,
+          "peak_activation_permille": 15,
+          "reps": 0,
+          "active_seconds": 0
+        }
+      ],
+      "hex": "20020000290000000078e76807000300fa0084030c001200100e00000600020000000f0000000000"
+    }
+  ],
+  "history_end": [
+    {
+      "status": 0,
+      "next_index": 90,
+      "hex": "210000005a000000"
+    }
+  ],
+  "status": [
+    {
+      "fields": {
+        "fw_version": 1,
+        "flags": 7,
+        "calib_state": 0,
+        "epoch_now": 1760000123,
+        "uptime_s": 5400,
+        "boot_id": 7,
+        "rest_raw": 310,
+        "max_raw": 3150,
+        "threshold_pct": 30,
+        "battery_pct": 255,
+        "oldest_index": 0,
+        "next_index": 90,
+        "last_cmd": 4,
+        "last_result": 0,
+        "reps_today": 42
+      },
+      "hex": "300107007b78e76818150000070036014e0c1eff000000005a00000004002a00"
+    }
+  ],
+  "control": [
+    {
+      "name": "SET_TIME",
+      "epoch_s": 1760000000,
+      "tz_offset_min": -240,
+      "hex": "010078e76810ff"
+    },
+    {
+      "name": "CALIBRATE_REST",
+      "hex": "02"
+    },
+    {
+      "name": "CALIBRATE_MAX",
+      "hex": "03"
+    },
+    {
+      "name": "SYNC_HISTORY",
+      "from_index": 41,
+      "hex": "0429000000"
+    },
+    {
+      "name": "CLEAR_HISTORY",
+      "hex": "05"
+    },
+    {
+      "name": "SET_THRESHOLD",
+      "threshold_pct": 35,
+      "hex": "0623"
+    },
+    {
+      "name": "IDENTIFY",
+      "hex": "07"
+    }
+  ]
+}
